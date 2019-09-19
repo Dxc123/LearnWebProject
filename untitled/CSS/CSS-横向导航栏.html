@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-水平导航栏</title>
+    <style>
+    ul
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        padding-top:6px;
+        padding-bottom:6px;
+    }
+    li
+    {
+    display:inline;
+    /* float: left; */
+    }
+    a:link,a:visited
+    {
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    text-align:center;
+    padding:6px;
+    text-decoration:none;
+    text-transform:uppercase;
+    }
+    a:hover,a:active
+    {
+    background-color:#7A991A;
+    }
+    </style>
+</head>
+<body>
+    <!-- CSS-横向导航栏 -->
+    <!-- 有两种方法创建横向导航栏。使用内联或浮动的列表项。 -->
+
+
+
+    <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            </ul>
+
+
+    <!-- 1.内嵌列表项 -->
+    <!-- display:inline - 默认情况下，<li>元素是块元素。在这里，我们删除换行符之前和之后每个列表项，以显示一行。 -->
+
+
+    <!-- 2.浮动列表项 -->
+
+            <!-- li{float:left;} -->
+            <!-- float:left - 使用浮动块元素的幻灯片彼此相邻 -->
+</body>
+</html>

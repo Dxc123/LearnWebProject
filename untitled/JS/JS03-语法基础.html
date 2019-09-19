@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS03-语法</title>
+</head>
+<body>
+<!--1.JavaScript 字面量-->
+    <!--在编程语言中，一个字面量是一个常量，如 3.14。-->
+    <!--数字（Number）字面量 可以是整数或者是小数，或者是科学计数(e)-->
+
+<!--2.字符串（String）字面量：可以使用单引号或双引号 -->
+    <!--"John Doe"-->
+    <!--'John Doe'-->
+
+<!--3.表达式字面量-->
+    <!--5 + 6-->
+    <!--5 * 10-->
+
+<!--4.数组（Array）字面量:定义一个数组-->
+    <!--[40, 100, 1, 5, 25, 10]-->
+
+<!--5.对象（Object）字面量: 定义一个对象-->
+    <!--{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}-->
+
+<!--6.函数（Function）字面量: 定义一个函数-->
+    <!--function myFunction(a, b) { return a * b;}-->
+
+
+
+
+<!--JavaScript 变量-->
+
+    <!--在编程语言中，变量用于存储数据值。-->
+    <!--JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值-->
+
+    <!--var x, length-->
+    <!--x = 5-->
+    <!--length = 6-->
+
+<!--变量可以通过变量名访问。在指令式语言中，变量通常是可变的。字面量是一个恒定的值。-->
+    <!--变量是一个名称。字面量是一个值。-->
+
+
+<!--JavaScript 操作符-->
+    <!--JavaScript使用 算术运算符 来计算值-->
+
+    <!--(5 + 6) * 10-->
+
+
+    <!--JavaScript使用赋值运算符给变量赋值：-->
+    <!--x = 5-->
+    <!--y = 6-->
+    <!--z = (x + y) * 10-->
+
+
+
+<!--JavaScript 语句-->
+<!--在 HTML 中，JavaScript 语句向浏览器发出的命令。浏览器通过 JavaScript 语句明白要执行什么操作。-->
+<!--语句是用分号分隔-->
+<script>
+    var x = 5+6;
+    var y = x *10;
+</script>
+
+
+
+<!--JavaScript 注释-->
+<!--不是所有的 JavaScript 语句都是"命令"。双斜杠 // 后的内容将会被浏览器忽略-->
+
+
+<!--JavaScript 数据类型
+JavaScript 有多种数据类型：数字，字符串，数组，对象等等：-->
+<!--字符串（String）、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空（Null）、未定义（Undefined）-->
+
+<script>
+    var lenth = 16;                                // Number 通过数字字面量赋值
+    var point = x * 10;                            // Number 通过表达式字面量赋值
+    var lastName = "Johnson";                      // String 通过字符串字面量赋值
+    var cars = ["Saab", "Volvo", "BMW"];          // Array  通过数组字面量赋值
+    var person = {firstName:"John", lastName:"Doe"};   // Object 通过对象字面量赋值
+    //布尔
+    var x=true;
+    var y=false;
+
+    var cars=new Array();   //数组
+    cars[0]="Saab";
+    cars[1]="Volvo";
+    cars[2]="BMW";
+    //等价于
+    // var cars=new Array("Saab","Volvo","BMW");
+//    var cars=["Saab","Volvo","BMW"];
+//    数组下标是基于零的，所以第一个项目是 [0]，第二个是 [1]，以此类推。
+
+
+//    Undefined 和 Null
+//     Undefined 这个值表示变量不含有值。
+// 可以通过将变量的值设置为 null 来清空变量。
+    cars=null;
+    person=null;
+
+
+    // 声明变量类型
+    // 当您声明新变量时，可以使用关键词 "new" 来声明其类型：
+
+    var carname=new String;
+    var x=      new Number;
+    var y=      new Boolean;
+    var cars=   new Array;
+    var person= new Object;
+//    JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。
+</script>
+
+
+<!--JavaScript 函数-->
+
+<!--JavaScript 语句可以写在函数内，函数可以重复引用：-->
+
+<!--引用一个函数 = 调用函数(执行函数内的语句)。-->
+<script>
+    function myFunction(a, b) {
+    return a * b;                                // 返回 a 乘于 b 的结果
+}
+</script>
+
+
+<!--JavaScript 对大小写敏感-->
+
+<!--函数 getElementById 与 getElementbyID 是不同的。-->
+
+<!--同样，变量 myVariable 与 MyVariable 也是不同的。-->
+
+
+
+<!--JavaScript 中，常见的是驼峰法的命名规则，如 lastName (而不是lastname)。-->
+<!--JavaScript 是脚本语言。浏览器会在读取代码时，逐行地执行脚本代码。而对于传统编程来说，会在执行前对所有代码进行编译。-->
+
+
+<!--空格-->
+<!--JavaScript 会忽略多余的空格。您可以向脚本添加空格，来提高其可读性。下面的两行代码是等效的：-->
+
+<!--var person="Hege";-->
+<!--var person = "Hege";-->
+
+
+
+<!--对代码行进行折行-->
+<!--您可以在文本字符串中使用反斜杠对代码行进行换行。下面的例子会正确地显示：-->
+
+<!--document.write("你好 \ W3Cschool!")-->
+
+</body>
+</html>

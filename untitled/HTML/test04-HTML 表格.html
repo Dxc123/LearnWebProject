@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test4-表格</title>
+</head>
+<body>
+    <!-- HTML 表格 -->
+        <!-- 表格由<table>标签来定义。每个表格均有若干行（由<tr>标签定义）,每行被分割为若干单元格（由<td>标签定义） -->
+            <!-- 字母 td 指表格数据（table data），即数据单元格的内容 -->
+        <!-- 数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。 -->
+
+
+    <!-- HTML 表格的基本结构：-->
+        <!--
+        <table>…</table>：定义表格
+        <th>…</th>：定义表格的标题栏（文字加粗）
+        <tr>…</tr>：定义表格的行
+        <td>…</td>：定义表格的列 -->
+
+        <!-- 使用边框属性border来显示一个带有边框的表格： -->
+        <!-- 表格的表头单元格使用<th>标签进行定义。 -->
+                <!-- 表格的表头单元格属性主要是一些公共属性，如：align、dir、width、height。大多数浏览器会把表头显示为粗体居中的文本： --> 
+
+    <!-- HTML表格高度和宽度 -->
+        <!-- 在<table>标签中您可以使用width（宽）和height（高）属性设置表格宽度和高度。您可以按像素或可用屏幕区域的百分比来指定表格宽度或高度。 -->
+
+    <!--  HTML合并单元格 -->
+        <!-- 如果要将两个或多个列合并为一个列，将使用colspan属性  -->
+        <!-- 如果要合并两行或更多行，则将使用rowspan属性。 -->
+<!-- 示例 -->
+<table border="1" width="100%" >
+        
+    <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+        <th>Header3</th>
+    </tr>
+    <tr>
+        <!-- <td>row1,cell1</td> -->
+        <td rowspan="2">row1,cell1</td>
+        <td>row1,cell2</td>
+        <td>row1,cell3</td>
+    </tr>
+    <tr>
+        <!-- <td>row2,cell1</td> -->
+        <td>row2,cell2</td>
+        <td>row2,cell3</td>
+    </tr>
+    <tr>
+        <td colspan = "3">row3,cell1</td>
+    
+    </tr>
+</table>
+
+<br>
+
+<!-- HTML表格头部、主体、页脚 -->
+        <!-- 　表格可以分为三个部分 - 头部，主体和页脚，如同word文档中页面的页眉、正文、页脚。每个页面保持相同，而正文是表格的主要内容持有者。 -->
+
+<!-- 　头部，主体和页脚的对应的三个标签是： -->
+        <!-- <thead> - 创建单独的表头。 -->
+        <!-- <tbody> - 表示表格的主体。 -->
+        <!-- <tfoot> - 创建一个单独的表页脚。 -->
+        <!-- 　表可以包含多个<tbody>元素以指示不同的页面。 -->
+<!-- 注意的<thead>和<tfoot>标签应出现在<tbody>之前： -->
+<table border="1" width="100%">
+<thead>
+    <tr>
+        <td colspan = "4">This is the head of the table</td>
+    </tr>
+</thead>
+<tfoot>
+    <tr>
+        <td colspan = "4">This is the foot of the table</td>
+    </tr>
+</tfoot>
+
+<tr>
+    <td>cell1</td>
+    <td>cell2</td>
+    <td>cell3</td>
+
+</tr>
+
+</table>
+
+<br>
+<!-- HTML表格的嵌套 -->
+<!-- 可以在另一个表中使用一个表。可以使用<table>内的几乎所有标签。 -->
+
+<table border="1" width="100%">
+<tr>
+    <td>
+        <table border="1" width="100%">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>琪琪</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>曼迪</td>
+                <td>7000</td>
+            </tr>
+
+        </table>
+    </td>
+</tr>
+<tr>
+        <td>cell1</td>
+        <td>cell2</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
