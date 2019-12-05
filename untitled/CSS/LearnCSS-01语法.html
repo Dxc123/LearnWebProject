@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS语法+创建</title>
+    <!-- css使用:1.外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="MyCssStyle.css"> 
+<!-- css使用:2.内部样式表 -->
+<!-- 内部样式表是使用 <style> 标签在文档头部定义内部样式表 -->
+<style>
+    div{ color: aqua;}  
+</style>
+
+</head>
+<body>
+    <!-- CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明: -->
+    <!-- CSS声明总是以分号(;)结束，声明组以大括号({})括起来: -->
+    <!-- 详见mystyle.css文件 -->
+    <p>这是一个段落（使用外部样式表）</p>
+    <div>
+    这是一个div（使用内部样式表）
+    </div>
+    <!-- css使用:3.内联样式 -->
+    <!-- 使用内联样式，你需要在相关的标签内使用样式（style）属性。 -->
+    <h1 style="color: blue;margin-left: auto;font: 100;">这是一个段落（使用内联样式）</h1>
+
+    <!-- 
+        
+        多重样式优先级顺序:
+    下列是一份优先级逐级增加的选择器列表，其中数字 7 拥有最高的优先权：
+
+1.通用选择器（*）
+2.元素(类型)选择器
+3.类选择器
+4.属性选择器
+5.伪类
+6.ID 选择器
+7.内联样式 
+
+-->
+
+<!-- 优先级：内联样式> ID 选择器> 类选择器 -->
+
+</body>
+</html>

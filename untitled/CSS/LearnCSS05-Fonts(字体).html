@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnCSS05-Fonts(字体)</title>
+    <style>
+        /* 设置 <body>元素的默认字体大小的是百分比： */
+        body {font-size:100%;}
+        /* 字体样式 */
+        p.normal {font-style:normal;}/*常显示文本*/
+        p.italic {font-style:italic;}/*斜体字*/
+        p.oblique {font-style:oblique;}/*文字向一边倾斜*/
+
+        /* 字体大小 */
+        h1 {font-size:40px;}
+        h2 {font-size:30px;}
+        p {font-size:14px;}
+    </style>
+</head>
+<body>
+    <!-- CSS字体属性定义字体，加粗，大小，文字样式。 -->
+    <!-- font 简写属性，作用是将字体属性设置在一个声明中
+        可设置的属性是（按顺序）： "font-style font-variant font-weight font-size/line-height font-family"
+
+font-size和font-family的值是必需的。如果缺少了其他值，默认值将被插入，如果有默认值的话。 -->
+
+
+    <!-- 1.font-style 指定文本的字体样式 -->
+    <!-- 2.font-variant  以小型大写字体或者正常字体显示文本。-->
+    <!-- 3.font-weight 指定字体的粗细。 -->
+    <!-- 4.font-size 属性设置文本的大小。 -->
+    <!-- 5.font-family 指定文本的字体系列-->
+
+    <p class="normal">This is a paragraph, normal.</p>
+    <p class="italic">This is a paragraph, italic.</p>
+    <p class="oblique">This is a paragraph, oblique.</p>
+
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>Specifying the font-size in px allows Internet Explorer 9, Firefox, Chrome, Opera, and Safari to resize the text.</p>
+<p><b>Note:</b> This example does not work in IE, prior version 9.</p>
+</body>
+</html>

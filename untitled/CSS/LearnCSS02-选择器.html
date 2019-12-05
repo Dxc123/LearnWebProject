@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-选择器</title>
+
+    <style>
+        /* 使用id选择器 */
+        #para1{
+            text-align: center;
+            color: coral;
+        }
+        /* 使用class选择器 */
+        .para2{
+            text-align: left;
+            color: crimson;
+        }
+        /* 也可以指定特定的HTML元素使用class。
+        在以下实例中, 所有的 p 元素使用 class="center" 让该元素的文本居中*/
+        p.center{
+            color: burlywood;
+            text-align: center;
+            word-spacing: 10px;/*文本间隔*/
+            text-indent: 50px;/*文本缩进*/
+            border-style:dotted solid double dashed;
+/* 上边框是 dotted 点线框
+右边框是 solid 实线边界
+底边框是 double 定义两个边界。 两个边界的宽度和border-width的值相同
+左边框是 dashed  虚线框 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 在HTML元素中设置CSS样式，你需要在元素中设置"id" 和 "class"选择器 -->
+    <!-- 1. id 选择器 -->
+    <!-- id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
+    HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。
+    （在文档头部style标签内定义）
+    注意：ID属性不要以数字开头，数字开头的ID在 Mozilla/Firefox 浏览器中不起作用
+
+-->
+
+    <p id ="para1">
+        这是一个段落（使用id选择器）
+    </p>
+
+
+    <!-- 2.class 选择器 -->
+<!-- 
+    class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。
+class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示 
+注意：类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。
+-->
+<p class="para2">这是另一个段落（使用class选择器）</p>
+<h1 class="para2">这是一个标题（使用同一份class选择器）</h1>
+
+<p class="center">这是另一个段落（使用名为“center”的class选择器）</p>
+</body>
+</html>

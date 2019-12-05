@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Text(文本)</title>
+    <style>
+    
+    h1 {
+         /* 添加文本阴影 */
+        text-shadow: 2px 2px chartreuse;
+    }
+    
+    div.ex1 {
+        /* 设置元素的文本方向 */
+        direction:rtl;
+    }
+    
+    p{ 
+        /* 增加字之间的空白空间 */
+        word-spacing:30px;
+    }
+    </style>
+</head>
+
+<body>
+        <!-- 通过CSS的Text属性，你可以改变页面中文本的颜色、字符间距、对齐文本、装饰文本、对文本进行缩进等等， -->
+
+        <!-- 所有CSS文本属性。 -->
+        <!-- 
+        1.color  设置文本颜色
+        2.direction  设置文本方向
+        3.letter-spacing 设置字符间距
+        4.line-height 设置行高
+        5.text-align  文本对齐方式
+        6.text-decoration  向文本添加修饰 （删除线、下划线）
+        7.text-indent  缩进元素中文本的首行 
+        8.text-shadow  设置文本阴影
+        9.text-transform 控制元素中的字母
+        10.unicode-bidi 设置或返回文本是否被重写 
+        11.vertical-align 设置元素的垂直对齐
+        12.white-space 设置元素之间空白空间
+        13.word-spacing 设置字间距
+        --> 
+
+        <h1>Text-shadow effect</h1>
+        <div>一些文本。 默认书写方向</div>
+        <div class="ex1">一些文本。从右到左的书写方向。</div>
+        <p>This is some text. This is some text.</p>
+
+</body>
+</html>
