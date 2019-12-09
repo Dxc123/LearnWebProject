@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnCSS25-导航栏(横向2)</title>
+    <style>
+    ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    }
+    li{
+    float: left;/*向左浮动->彼此相邻*/
+    }
+    a:link,a:visited{
+    display: block;/*显示块元素的链接，让整体变为可点击链接区域*/
+    padding: 10px;
+    text-decoration: none;/*去除默认的下划线*/
+    text-align: center;/*文本居中*/
+    color: #ffffff;
+    background-color: red;
+
+    }
+    a:hover,a:active
+    {
+    background-color:#7A991A;
+    }
+    </style>
+</head>
+<body>
+    <!-- 浮动列表项 创建横向导航栏 -->
+    <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+</body>
+</html>

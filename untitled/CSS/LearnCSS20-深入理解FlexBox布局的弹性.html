@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnCSS20-深入理解FlexBox布局的弹性</title>
+    <style>
+    .box{
+    display: flex;
+    width: 800;
+    height: 100px;
+    background-color: hotpink;
+    
+    }
+    div div{
+    height: 60px;
+    /* flex-shrink: 0; */
+    }
+    div div:nth-child(1){
+    background-color: antiquewhite;
+    width: 200px;
+    flex-shrink: 1;
+    }
+    div div:nth-child(2) {
+    background-color: red;
+    width: 300px;
+    flex-shrink: 2;
+    }
+    div div:nth-child(3) {
+    background-color: green;
+    width: 400px;
+    flex-shrink: 3;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- flex-shrink属性 -->
+    <!-- 设置 flex item 的收缩因子；默认是1；如果 所有 item 的 size 之和大于容器的 size，item 会按照 flex-shrink 缩放到合适的尺寸 -->
+
+    <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>learnCSS17-03-position属性之fixed、sticky</title>
+    <style>
+    p.pos_fixed
+        {
+        position:fixed;
+        top:30px;
+        right:5px;
+        }
+
+
+        * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 1000px;
+    }
+
+    .box {
+        margin: 10px;
+        height: 400px;
+        background-color: #eeeeee;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    p:nth-child(1) {
+        background-color: red; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    p:nth-child(2) {
+        background-color: green;
+    }
+
+    p:nth-child(3) {
+        background-color: black;
+    }
+
+
+    /*  sticky*/
+
+    .header {
+        width: 100%;
+        height: 200px;
+        background-color: yellow;
+    }
+
+    .user {
+        width: 100%;
+        height: 64px;
+        background-color: cornflowerblue;
+        position: sticky;
+        top: 0px;
+    }
+
+    .con {
+        width: 100%;
+        height: 1000px;
+        background-color: bisque;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- fixed :元素的位置相对于浏览器窗口是固定位置。
+即使窗口是滚动的它也不会移动： -->
+
+<!-- <p class="pos_fixed">Some more text</p>
+<p><b>注意:</b> IE7和IE8支持只有一个!DOCTYPE指定固定值.</p>
+<p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p><p>Some text</p> -->
+
+    <!-- <div class="box">
+    <p>前端小课，每日一课</p>
+    <p>前端从0-1</p>
+    <p>我们今天学习 position：fixed、sticky<布局</p>
+    </div> -->
+
+
+<!-- 在端开发中，iOS 中有一种独特的效果「悬停」，当滚动到某个位置时，某个 view 会悬停到某个位置不动，比如微信通讯录的字母标签当滑动的时候字母标签会悬停。
+
+在 web 中通过 position: sticky 来实现这种效果。
+-->
+
+<div class="header">头部</div>
+<div class="user">用户信息</div>
+<div class="con">内容</div>
+
+
+</body>
+</html>

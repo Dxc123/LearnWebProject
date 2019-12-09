@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>learnCSS17-01-position属性之relative</title>
     <style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
     h2.pos_left
     {
     position:relative;
@@ -17,15 +21,59 @@
     position:relative;
     left:20px;
     }
+
+
+    .box {
+    margin: 10px;
+    height: 400px;
+    background-color: #eeeeee;
+    }
+    p {
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    }
+    p:nth-child(1) {
+    background-color: red;
+    }
+    p:nth-child(2) {
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    }
+    p:nth-child(3) {
+    background-color:black;
+    }
+
+
     </style>
 </head>
 <body>
-        h2>This is a heading with no position</h2>
+    <!-- 相对布局  -->
+        <h2>This is a heading with no position</h2>
         <h2 class="pos_left">This heading is moved left according to its normal position</h2>
         <h2 class="pos_right">This heading is moved right according to its normal position</h2>
         <p>Relative positioning moves an element RELATIVE to its original position.</p>
         <p>The style "left:-20px" subtracts 20 pixels from the element's original left position.</p>
         <p>The style "left:20px" adds 20 pixels to the element's original left position.</p>
+
+        <!-- 关键点是「相对谁」，通过 top、left、right、bottom 来修改元素的偏移位置 -->
+        <!-- 相对谁？相对的是元素在流式布局中的起始位置，起始位置就是元素在流式布局的位置。属性 top 和 bottom 、left 和 right 不能同时使用 -->
+        <!-- relative 的坐标系如下，上边为正，下边为负；左边为负，右边为正：
+        比如向上移动 20px，可以使用 top: 20px，也可以使用 bottom: -20px;
+        -->
+        
+        <!-- relative 的一大特点就是「不会破坏」默认的流式布局，也就是说，你可以让某个元素移动到指定位置，但是你在流式布局中的「坑位」还会保留 -->
+
+        <div class="box">
+        <p>前端小课，每日一课</p>
+        <p>素燕，公众号</p>
+        <p>前端从0-1</p>
+        </div>
+
+
+
     
 </body>
 </html>
